@@ -20,7 +20,7 @@ done
 # 检查互联网连接
 check_internet() {
     echo "正在检查互联网连接"
-    ping -c 1 -W 3 8.8.8.8 > /dev/null 2>&1
+    ping -c 1 -W 3 223.5.5.5 > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         return 0
     else
