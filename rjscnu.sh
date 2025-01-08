@@ -49,7 +49,7 @@ monitor_output() {
     while read -r line; do
         echo "$line"
         # 检查关键字
-        if [[ "$line" =~ "认证成功" ]]; then
+        if [[ "$line" =~ "认证成功" ]] || [[ "$line" =~ "Success" ]]; then
                 kill_rjsupplient  # 调用处理函数
                 break
         fi
