@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# 切换到脚本所在目录
+cd "$(dirname "$(realpath "$0")")" || exit 1
+
 ARGS=""
 rjpath="./rjsupplicant/rjsupplicant.sh"
 
